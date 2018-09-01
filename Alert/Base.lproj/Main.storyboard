@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Alert" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e51-Y5-n62">
+                                <rect key="frame" x="40" y="637" width="295" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
+                                <state key="normal" title="Input num">
+                                    <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="ShowButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6Tk-ms-Ygz"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hbs-Gp-Rcp">
+                                <rect key="frame" x="16" y="157" width="114" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Computer Number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2T2-xf-YcB">
+                                <rect key="frame" x="197" y="157" width="162" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cgb-EX-HST">
+                                <rect key="frame" x="52" y="201" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vrr-r9-s2m">
+                                <rect key="frame" x="299" y="201" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o0h-JA-fw2">
+                                <rect key="frame" x="187.5" y="333.5" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="e51-Y5-n62" secondAttribute="trailing" constant="40" id="1Ip-dH-I4T"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Vrr-r9-s2m" secondAttribute="trailing" constant="76" id="3WU-Gy-lKC"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Hbs-Gp-Rcp" secondAttribute="trailing" constant="20" symbolic="YES" id="59k-X1-uOB"/>
+                            <constraint firstItem="o0h-JA-fw2" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="6YN-hT-z0O"/>
+                            <constraint firstItem="e51-Y5-n62" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Dyq-xV-Xvs"/>
+                            <constraint firstItem="2T2-xf-YcB" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" symbolic="YES" id="EVp-gt-wuc"/>
+                            <constraint firstItem="o0h-JA-fw2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Fdf-Bg-zxO"/>
+                            <constraint firstItem="Vrr-r9-s2m" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" symbolic="YES" id="R2O-kL-lLn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2T2-xf-YcB" secondAttribute="trailing" constant="16" id="SYF-Ah-nr0"/>
+                            <constraint firstItem="cgb-EX-HST" firstAttribute="top" secondItem="Hbs-Gp-Rcp" secondAttribute="bottom" constant="20" id="SiB-eS-Ygh"/>
+                            <constraint firstItem="Hbs-Gp-Rcp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Xfd-X6-QSm"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="cgb-EX-HST" secondAttribute="trailing" constant="20" symbolic="YES" id="bvN-om-OlW"/>
+                            <constraint firstItem="Vrr-r9-s2m" firstAttribute="top" secondItem="2T2-xf-YcB" secondAttribute="bottom" constant="20" id="cDL-9H-L6y"/>
+                            <constraint firstItem="cgb-EX-HST" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="52" id="kbO-MK-LPX"/>
+                            <constraint firstItem="2T2-xf-YcB" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="137" id="oLr-RH-KrD"/>
+                            <constraint firstItem="e51-Y5-n62" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="xAB-08-nSw"/>
+                            <constraint firstItem="Hbs-Gp-Rcp" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="137" id="xgO-yh-oan"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="chekWinLabel" destination="o0h-JA-fw2" id="YQq-8r-Muf"/>
+                        <outlet property="computerNumLabel" destination="Vrr-r9-s2m" id="6N7-G3-60m"/>
+                        <outlet property="inputNumLabel" destination="cgb-EX-HST" id="8MO-0P-SAN"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="125.5" y="-97.5"/>
+        </scene>
+    </scenes>
+</document>
